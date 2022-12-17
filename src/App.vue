@@ -1,11 +1,15 @@
 <template>
-  <div>我是根组件</div>
+  <el-button type="primary">Primary</el-button>
 </template>
-
 <script>
-export default {
-
-}
+import { defineComponent } from 'vue'
+import { ElButton } from 'element-plus'
+export default defineComponent({
+  components: {
+    ElButton,
+  },
+  setup () { },
+})
 </script>
 
 <style>
